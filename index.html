@@ -317,7 +317,8 @@ Thank you!</textarea>
 - Will the patient require any IV drips or oxygen during the exam? 
 - Please ask the patient if they need pain medication or anxiolytics before the MRI. 
 - A working IV 
-@RN/Charge RN: Please arrange round-trip CareFlite to MR1/MR2 (1st floor). We will provide a specific scan time once the patient is fully prepared. Thank you!</textarea>
+@RN/Charge RN: Please arrange round-trip CareFlite to MR1/MR2 (1st floor). We will provide a specific scan time once the patient is fully prepared. 
+*Visitors: Family members are not permitted to accompany the patient into CUH scan area. Thank you!</textarea>
 </div>
 
 <div class="block">
@@ -499,8 +500,8 @@ When you get a chance, could you please review and get the MRI exam(s) protocole
 </div>
 
 <div class="smallblock">
-<button onclick="copyText('b13')" style="background-color:#f5f7fa;"> 13 </button>
-<textarea id="b13" class="hidden">1.5T Scanner only due to
+<button onclick="copyText('b13')"> EP </button>
+<textarea id="b13" class="hidden">CIED Programming Needed for MRI
 </textarea>
 </div>
 
@@ -1620,8 +1621,8 @@ function insertPump(type){
   let text = "";
 
   if(type === 'Pumpopt1'){
-    text = `This patient has a Medtronic SynchroMed pain pump. According to manufacturer guidelines, the pump will temporarily pause during the MRI and then resume automatically afterward. However, it requires a check by PMR (Physical Medicine & Rehabilitation) as soon as possible following the MRI.
-Could you please arrange and confirm this PMR check before we schedule the MRI?
+    text = `This patient has a Medtronic SynchroMed pain pump. According to manufacturer guidelines, the pump will temporarily pause during the MRI and then resume automatically afterward. However, it requires a PMR (Physical Medicine & Rehabilitation) pump check as early as 1 hour after the MRI is completed.
+Could you please arrange and confirm that PMR will be available to perform this check before we schedule the MRI?
 Additionally, if the patient requires alternative pain management while the pump is paused, please place an order for the appropriate pain medication.
 Thank you!`;
   }
